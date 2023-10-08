@@ -1,6 +1,6 @@
 # Car Insurance Website
 
-![Website Screenshot](screenshot.png)
+![Website Screenshot](https://github.com/sohaibzafar701/car_insurance_website/blob/master/website.png))
 
 ## Overview
 
