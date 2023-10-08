@@ -1,0 +1,78 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(bk.jpg);
+}
+.box{
+	width: 500px;
+	background: #333;
+	padding: 30px 10px;
+	border-radius: 20px;
+	box-shadow: 0px 10px 20px #b3b3b3;
+	text-align: center;
+}
+.form{
+	text-align: left;
+	/*background: red;*/
+	width: 70%;
+	margin: 20px auto;
+}
+.box h2{
+	color: #fff;
+	font-size: 20px;
+	font-family: Calibri;
+	font-weight: bold;
+	text-align: center;
+}
+
+label{
+	display: block;
+	color: #fff;
+	font-size: 14px;
+    font-family: Calibri;
+}
+.fieldwrapper{
+	margin: 20px 0px;
+}
+.fieldwrapper1{
+	display: flex;
+    justify-content: center;
+}
+.fieldwrapper input{
+	padding: 6px 12px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    font-family: Calibri;
+    width: 93%;
+}
+.fieldwrapper button{
+	margin-top: 30px;
+	padding: 10px 30px;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	border: none;
+	outline: none;
+	font-size: 18px;
+    font-family: Calibri;
+    cursor: pointer;
+    transition: 1s all;
+}
+.fieldwrapper button:hover{
+	background: #fff;
+	color: #000;
+}
+.error{
+	color: red;
+    font-family: Calibri;
+    font-size: 14px;
+    margin: 10px auto;
+}

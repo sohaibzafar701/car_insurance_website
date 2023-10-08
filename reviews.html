@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Product Reviews</title>
+</head>
+<body>
+	<h1>Product Reviews</h1>
+
+	<!-- Display previous reviews -->
+	<h2>Previous Reviews:</h2>
+	<ul>
+		<?php
+			// Connect to the database
+			$conn = mysqli_connect("localhost", "username", "password", "test");
+
+			// Check connection
+			if (!$conn) {
+			    die("Connection failed: " . mysqli_connect_error());
+			}
+
+			// Select all reviews from the database
+			$sql = "SELECT * FROM user_reviews";
+			$result = mysqli_query($conn, $sql);
+
+			// Display each review and its rating
+			if (mysqli_num_rows($result) > 0) {
+			    while($row = mysqli_fetch_assoc($result)) {
+			        echo "<li>" . $row["review"] . " - " . $row["rating"] . " stars</li>";
+			    }
+			} else {
+			    echo "<li>No reviews yet.</li>";
+			}
+
+			// Close database connection
+			mysqli_close($conn);
+		?>
+	</ul>
+
+	<!-- Form for users to write a review -->
+	<h2>Write a Review:</h2>
+	<form method="post" action="reviews.php">
+		<label for="review">Review:</label><br>
+		<textarea id="review" name="review"></textarea><br>
+
+
+        <label for="rating">Rating:</label><br>
+<div class="rating">
+    <?php for ($i = 5; $i >= 1; $i--) : ?>
+        <input type="radio" id="star<?php echo $i; ?>" name="rating" value="<?php echo $i; ?>" />
+        <label for="star<?php echo $i; ?>" title="<?php echo $i; ?> stars"><?php echo str_repeat('&#9733;', $i); ?></label>
+    <?php endfor; ?>
+</div>
+
+		<!-- <label for="rating">Rating:</label><br>
+		<div class="rating">
+			<input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="5 stars">5 stars</label>
+			<input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="4 stars">4 stars</label>
+			<input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="3 stars">3 stars</label>
+			<input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="2 stars">2 stars</label>
+			<input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="1 star">1 star</label>
+		</div> -->
+
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>

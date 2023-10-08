@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Car Broker Insurance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+      .dropdown {
+        
+        position: relative;
+        display: inline-block;
+
+      }
+      
+      .dropdown-btn {
+        background-color: forestgreen;
+        color: white;
+        padding: 9px;
+        border: none;
+        margin-right: 25px;
+      }
+      
+      .dropdown-content {
+        background-color: forestgreen;
+        color: white;
+        padding: 9px;
+        display: none;
+        position: absolute;
+        z-index: 1;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      </style>
+    
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="home_in.html">Car Broker Insurance</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="home_in.html">Home</a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link" href="quote1_in.html" >Get a quote</a>
+
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="cars_in.html" role="button" aria-expanded="false" > Car Insurance </a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="aboutus_in.html" >About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="reviews_previous.php" >Clients Reviews</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="calculator.html" >Calculator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="broker_meetings_in.php" >Request Meetings</a>
+          </li>
+      </ul>
+      <a href="logout.php" ><button style="background-color: forestgreen; padding: 5px; color: white; border: none;" type="button">logout</button></a>
+
+
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- ///////////////////////////////////////////////////////// -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+
+    <style>
+
+.calculator {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 2px solid #444444;
+  border-radius: 10px;
+  background-color: #F9F9F9;
+}
+
+.calculator input[type="text"] {
+  width: 90%;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 28px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  background-color: #F5F5F5;
+  color: #333;
+  text-align: right;
+}
+
+.calculator input[type="button"] {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 50%;
+  border: none;
+  background-color: #E5E5E5;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.calculator input[type="button"]:hover {
+  background-color: #ccc;
+}
+
+.calculator input[type="button"].operator {
+  background-color: #FFA500;
+  color: #fff;
+}
+
+.calculator input[type="button"].operator:hover {
+  background-color: #F90;
+}
+
+.calculator input[type="button"].clear {
+  background-color: #FF6666;
+  color: #fff;
+}
+
+.calculator input[type="button"].clear:hover {
+  background-color: #F00;
+}
+
+h1{
+    font-family: 'Open Sans', sans-serif;
+  font-size: 38px;
+  /* padding: 0 150px; */
+  text-align: center;
+}
+
+    </style>
+
+</head>
+<body>
+    <br><br>
+    
+    <h1>CALCULATOR</h1>
+
+    <br>
+	<div class="calculator">
+		<form name="calculator">
+			<input type="text" name="answer" id="answer" placeholder="0">
+			<input type="button" name="one" value="1" onclick="calculator.answer.value += '1'">
+			<input type="button" name="two" value="2" onclick="calculator.answer.value += '2'">
+			<input type="button" name="three" value="3" onclick="calculator.answer.value += '3'">
+			<input type="button" name="add" value="+" onclick="calculator.answer.value += '+'">
+			<br>
+			<input type="button" name="four" value="4" onclick="calculator.answer.value += '4'">
+			<input type="button" name="five" value="5" onclick="calculator.answer.value += '5'">
+			<input type="button" name="six" value="6" onclick="calculator.answer.value += '6'">
+			<input type="button" name="subtract" value="-" onclick="calculator.answer.value += '-'">
+			<br>
+			<input type="button" name="seven" value="7" onclick="calculator.answer.value += '7'">
+			<input type="button" name="eight" value="8" onclick="calculator.answer.value += '8'">
+			<input type="button" name="nine" value="9" onclick="calculator.answer.value += '9'">
+			<input type="button" name="multiply" value="*" onclick="calculator.answer.value += '*'">
+			<br>
+			<input type="button" name="clear" value="C" onclick="calculator.answer.value = ''">
+			<input type="button" name="zero" value="0" onclick="calculator.answer.value += '0'">
+			<input type="button" name="equals" value="=" onclick="calculator.answer.value = eval(calculator.answer.value)">
+			<input type="button" name="divide" value="/" onclick="calculator.answer.value += '/'">
+		</form>
+	</div>
+
+</body>
+</html>
+

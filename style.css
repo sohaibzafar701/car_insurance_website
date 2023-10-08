@@ -1,0 +1,254 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+.hero
+{
+	background-image: url(k.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 450px;
+}
+
+.heading h1 
+{
+	margin-top: 20px;
+	margin-left: 50px;
+	color: white;
+}
+
+.hero p 
+{
+	color: white;
+	margin-left: 50px;
+	margin-top: 50px;
+
+}
+
+.hero button
+{ 
+	margin-left: 50px;
+	background-color: forestgreen;
+	color: white;
+	padding: 10px;
+	border: none;
+}
+
+.secondpage h1
+{
+   text-align: center;
+   margin-top: 20px;
+}
+
+.col
+{
+	margin-top: 40px;
+}
+
+
+.box
+{
+	width: 80%;
+	padding: 100px;
+	margin: 0px auto;
+	box-shadow: 0px 0px 10px black;
+}
+
+.form
+{
+	width: 90%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0px auto;
+}
+.form p,.form #inputfield
+{
+	width: 45%;
+}
+.form #inputfield input
+{
+	width: 70%;
+	border: 1px solid #cccccc;
+	outline: none;
+	padding: 0px 10px;
+}
+.third li {
+	font-size: 25px;
+}
+
+.paragraph2 p 
+{
+	color: black;
+}
+
+
+.footer
+{
+	background-color:black ;
+	
+	color: white;
+}
+.footer h3
+{
+	text-align: center;
+	padding: 50px;
+}
+
+.register 
+
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.6);
+	width: %;
+	margin: 0px auto;
+	height: 600px;
+	margin-top: 50px;
+}
+
+.register label, .register input
+{
+
+	display: flex ;
+	color: white;
+
+}
+
+.register h2 
+{
+	color: white;
+}
+
+.register input
+{
+	width: 80%;
+	color: black;
+	padding: 0px 5px;
+}
+
+
+.wrapper{
+  display: inline-flex;
+  background: #fff;
+  height: 100px;
+  width: 400px;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  padding: 20px 15px;
+  box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+}
+.wrapper .option{
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0 10px;
+  border: 2px solid lightgrey;
+  transition: all 0.3s ease;
+}
+.wrapper .option .dot{
+  height: 20px;
+  width: 20px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  position: relative;
+}
+.wrapper .option .dot::before{
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  background: #0069d9;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(1.5);
+  transition: all 0.3s ease;
+}
+input[type="radio"]{
+  display: none;
+}
+#option-1:checked:checked ~ .option-1,
+#option-2:checked:checked ~ .option-2{
+  border-color: forestgreen;
+  background:forestgreen;
+}
+#option-1:checked:checked ~ .option-1 .dot,
+#option-2:checked:checked ~ .option-2 .dot{
+  background: white;
+}
+#option-1:checked:checked ~ .option-1 .dot::before,
+#option-2:checked:checked ~ .option-2 .dot::before{
+  opacity: 1;
+  transform: scale(1);
+}
+.wrapper .option span{
+  font-size: 20px;
+  color: #808080;
+}
+#option-1:checked:checked ~ .option-1 span,
+#option-2:checked:checked ~ .option-2 span{
+  color: #fff;
+}
+
+
+
+.yourinfo
+
+{
+	text-align: left;
+
+}
+
+.yourinfo label
+{
+	display: flex;
+}
+
+.yourinfo input
+{
+	margin-top: 10px;
+}
+
+
+.prdet
+{
+
+}
+
+.prdet label 
+{
+	display: flex;
+
+
+}
+.prdet input
+{
+	margin-top: 10px;
+}
+
+.driverdet
+{
+
+}
+
+.driverdet label
+{
+	display: flex;
+}
+
+.driverdet label
+{
+	margin-top: 10px;
+}

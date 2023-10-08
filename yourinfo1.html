@@ -1,0 +1,512 @@
+<!-- <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Car Broker Insurance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="jquery.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;700;800;900&display=swap" rel="stylesheet">
+  </head>
+  <body >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home_in.html">Car Broker Insurance</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="home_in.html">Home</a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link" href="quote1_in.html" >Get a quote</a>
+
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="cars_in.html" role="button" aria-expanded="false" > Car Insurance </a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="aboutus_in.html" >About Us</a>
+            </li>
+          </ul>
+           
+          <a href="logout.php" ><button style="background-color: forestgreen; padding: 5px; color: white; border: none;" type="button">logout</button></a>
+
+
+          </form>
+        </div>
+      </div>
+    </nav> -->
+
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Car Broker Insurance</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    
+    
+        <style>
+          .dropdown {
+            
+            position: relative;
+            display: inline-block;
+    
+          }
+          
+          .dropdown-btn {
+            background-color: forestgreen;
+            color: white;
+            padding: 9px;
+            border: none;
+            margin-right: 25px;
+          }
+          
+          .dropdown-content {
+            background-color: forestgreen;
+            color: white;
+            padding: 9px;
+            display: none;
+            position: absolute;
+            z-index: 1;
+          }
+          
+          .dropdown:hover .dropdown-content {
+            display: block;
+          }
+          </style>
+        
+      </head>
+      <body>
+    
+        <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home_in.html">Car Broker Insurance</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home_in.html">Home</a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" href="quote1_in.html" >Get a quote</a>
+    
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="cars_in.html" role="button" aria-expanded="false" > Car Insurance </a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="aboutus_in.html" >About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reviews_previous.php" >Clients Reviews</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="calculator.html" >Calculator</a>
+              </li>
+          </ul>
+          <a href="logout.php" ><button style="background-color: forestgreen; padding: 5px; color: white; border: none;" type="button">logout</button></a>
+    
+    
+          </form>
+        </div>
+      </div>
+    </nav>
+    
+
+
+
+
+
+
+   <!-- end of nav bar -->
+
+   <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>Heroes · Bootstrap v5.2</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/heroes/">
+
+    
+
+    
+
+<link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#712cf9">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    
+
+  
+    <div class="b-example-divider"></div>
+
+  <div style="background-color: lightgray; " class="container my-5">
+      <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+        <h1 class="display-4 fw-bold lh-1"></h1>
+        <p class="lead">
+
+          <style>
+  .visible{
+    color: green;
+    cursor: pointer;
+  }
+  .notvisible{
+    color: grey;
+  }
+</style>
+
+
+
+   <div style=" border: 10px lightgray ; color: black; margin-left: 20px; margin-top: 20px; font-size: 25px; font-family: 'Montserrat', sans-serif;
+ " class="aboutcar">
+     <span style="color: black; font-family: 'Montserrat', sans-serif;
+     " class="notvisible" class="stepsButtons">Vehicle info</span>
+>
+<span class="visible" class="stepsButtons">Your info</span>
+>
+<span style="color: black; font-family: 'Montserrat', sans-serif;
+" class="notvisible" class="stepsButtons">Your Driving</span>
+>
+<span style="color: black; font-family: 'Montserrat', sans-serif;
+" class="notvisible" class="stepsButtons">Your Cover</span>
+<br>
+<br>
+  <h1 style="text-align: left;width:100%; ;text-decoration:; font-weight: bold;">About you (The Proposer)</h1>
+
+__________________________________________________________________________________
+
+
+
+<br>
+<br>
+
+<div style=" border: 10px lightgray ; color: black; margin-left: 20px; margin-top: 20px; font-size: 25px; font-family: 'Montserrat', sans-serif;
+ " class="yourinfo">
+  
+
+
+<form action="yourinfo1.php" method="post">
+  <label for="title">Your Title</label>
+    <select name="title" id="title">
+  <option >Please Select</option>
+  <option >Mr</option>
+  <option >Mrs</option>
+</select>
+
+
+<br>
+<br>
+
+<label for="Martial">Your Martial Status</label>
+  <select name="Martial" id="Martial">
+  <option >Please Select</option>
+  <option >Single</option>
+  <option >Married</option>
+  <option >Divorced</option>
+</select>
+  
+  <br>
+  <br>
+
+  <label for="liveuk">How long have you lived in the UK?</label>
+  <input type="date" name="liveuk" id="liveuk">
+  <br>
+  <br>
+
+
+
+  <label for="telno">Your Main Telephone No.</label>
+  <input type="text" name="telno" id="telno">
+
+<br>
+<br>
+ 
+ <label for="chidrens"><P>How many childrens do you have under 16?</P></label>
+  <select name="childrens" id="childrens">
+  <option >Please Select</option>
+  <option >0</option>
+  <option >1</option>
+  <option >2</option>
+  <option >3</option>
+  <option >4</option>
+  <option >5</option>
+  <option >6</option>
+  <option >7</option>
+</select>
+
+
+<br>
+<br>
+
+
+
+ <h1 style="text-align: left;width:100%; ;text-decoration:; font-weight: bold;">Your address details</h1>
+
+__________________________________________________________________________________
+
+<br>
+<br>
+
+
+
+<p>Where do you currently lived in?</p>
+
+<label for="postcode">Postcode</label>
+<input type="text" placeholder="Enter Postcode" name="postcode" id="postcode">
+<label for="hno">House name / Number</label>
+<input type="text" placeholder="optional" name="hno" id="hno">
+<label for="textarea">Address</label>
+<input type="text" placeholder="Full Address" name="textarea" id="textarea">
+<br>
+<br>
+
+<label for="carkept"><p>Is the car kept at this address whole night?</p></label>
+<select style="width: 20%;" class="form-select" aria-label="Default select example" name="carkept" id="carkept">
+
+  <option selected>Please Select Yes or No</option>
+  <option >Yes</option>
+  <option >No</option>
+
+</select>
+
+<br>
+<br>
+
+
+
+ <h1 style="text-align: left;width:100%; ;text-decoration:; font-weight: bold ;">Your Occupation</h1>
+
+__________________________________________________________________________________
+
+<br>
+<br>
+
+
+<label for="occupation"><p>What is your occupation status?</p></label>
+<select name="occupation" id="occupation">
+  <option >Please Select</option>
+  <option >Employed</option>
+  <option >Self Employed</option>
+  <option >Full time education</option>
+  <option >Other</option>
+
+</select>
+
+<br>
+
+<br>
+
+<label for="occupationvehicle"><p>Does your occupation require you to use your vehicle for work purposes?</p></label>
+<select name="occupationvehicle" id="occupationvehicle">
+  
+
+<option >Please Select </option>
+  <option >Yes</option>
+  <option >No</option>
+
+
+
+
+</select>
+
+</select>
+
+<div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+         <a href="yourdriving1.html" > <input style="background-color: forestgreen; color: white; border: none; padding: 10px;" type="submit" value="Continue"></button></a>
+     
+        </div>
+   
+
+
+
+
+
+        
+       
+        
+      </div>
+    </div>
+  </div>
+
+
+
+      
+
+    
+
+
+<div  class="footer">
+  
+  <h3>© 2022 Copyright:Car Insurance Broker</h3> 
+</div>
+
+
+
+
+
+</body>
+</html>
+<!-- </form>
+<?php
+function calculatePrice($childrens, $occupation) {
+    $price = 0;
+
+    if ($childrens > 16) {
+        $price = 1000;
+    } else if ($childrens >= 0) {
+        $price = 500;
+    } else {
+        $price = 1500;
+    }
+
+    if ($occupation == "Full time education") {
+        $price += 1000;
+    } else if ($occupation == "Employed") {
+        $price += 500;
+    } else if ($occupation == "Self Employed") {
+        $price += 100;
+    }
+
+    return $price;
+}
+
+
+
+
+// Connect to the database
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "test";
+
+// Create connection
+$conn = mysqli_connect("localhost", "root", "", "test");
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+if (isset($_POST["childrens"]) && isset($_POST["occupation"])) {
+    $childrens = $_POST["childrens"];
+    $occupation = $_POST["occupation"];
+    $price = calculatePrice($childrens, $occupation);
+
+    $sql = "INSERT INTO prices (b) VALUES ($price)";
+
+    if ($conn->query($sql) === TRUE) {
+        echo "Record inserted successfully";
+    } else {
+        echo "Error inserting record: " . $conn->error;
+    }
+}
+
+$conn->close();
+?>
+//  <html>
+//     <body>
+//         <form action="" method="post">
+//             Age: <input type="text" name="age"><br>
+//             Employment: <input type="text" name="employment"><br>
+//             <input type="submit" value="Submit">
+//         </form>
+//     </body>
+// </html> 
+
+
+
+
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
